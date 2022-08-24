@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="" class="logo"><i>
+                    <ion-icon name="menu-outline"></ion-icon>
+                </i> Logo</a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="uil uil-times nav-close-btn"></i>
+                    <a href=""><i class="uil uil-home">Home</i></a>
+                    <a href=""><i class="uil uil-compass">Explore</i></a>
+                    <a href=""><i class="uil uil-info-circle">About</i></a>
+                    <a href=""><i class="uil uil-document-layout-left">Blog</i></a>
+                    <a href=""><i class="uil uil-envelope">Contact</i></a>
+                </div>
+            </div>
+            <i class="uil uil-apps nav-menu-btn"></i>
+        </div>
+    </header>
+    <section class="home">
+        <div class="swiper bg-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../index/img/1.jpg" alt="">
+                    <div class="text-content">
+                        <span>CHOOSING A FAN</span>
+                        <h2 class="title"> Why choose us? </h2>
+                        <p>Fanimation fans are the perfect fusion of beauty and functionality. With designs for every
+                            style and technology-driven controls for your convenience, Fanimation fans inspire your
+                            home. They integrate into any space and allow you to make a statement that is all your own.
+                        </p>
+                        <button class="read-btn"><a href="">Read more</a> <i class="caret-forward-outline"></ion-icon>
+                                "></i></button>
+                    </div>
+
+                </div>
+                <div class="swiper-slide ">
+                    <img src="../index/img/2.jpg" alt="">
+                    <div class="text-content">
+                        <span>CHOOSING A FAN</span>
+                        <h2 class="title"> Khuyễn mãi </h2>
+                        <p>Fanimation fans are the perfect fusion of beauty and functionality. With designs for every
+                            style and technology-driven controls for your convenience, Fanimation fans inspire your
+                            home. They integrate into any space and allow you to make a statement that is all your own.
+                        </p>
+                        <button class="read-btn"><a href="">Shop Now</a> <i class="caret-forward-outline"></ion-icon>
+                                "></i></button>
+                    </div>
+
+                </div>
+                <div class="swiper-slide ">
+                    <img src="../index/img/6.jpg" alt="">
+                    <div class="text-content">
+                        <span>CHOOSING A FAN</span>
+                        <h2 class="title"> Phụ kiện </h2>
+                        <p>Fanimation fans are the perfect fusion of beauty and functionality. With designs for every
+                            style and technology-driven controls for your convenience, Fanimation fans inspire your
+                            home. They integrate into any space and allow you to make a statement that is all your own.
+                        </p>
+                        <button class="read-btn"><a href="">See More</a> <i class="caret-forward-outline"></ion-icon>
+                                "></i></button>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../index/img/3.jpg" alt="">
+                    <div class="text-content">
+                        <span>CHOOSING A FAN</span>
+                        <h2 class="title"> Tổ chức của chúng tôi </h2>
+                        <p>Installing a fan in your favorite indoor space? Or adding one to your outdoor haven? The
+                            location determines the fan rating (dry, damp and wet) you need. From there, the fun begins
+                            as you choose a style that fits you!</p>
+                        <button class="read-btn"><a href="">Read more </a><i class="caret-forward-outline"></ion-icon>
+                                "></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slider-thumbs">
+            <div class="swipper-swapper thumbs-container">
+                <img src="../index/img/1.jpg" class="swipper-slide" alt="">
+                <img src="../index/img/2.jpg" class="swipper-slide" alt="">
+                <img src="../index/img/6.jpg" class="swipper-slide" alt="">
+                <img src="../index/img/3.jpg" class="swipper-slide" alt="">
+
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="../index/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".bg-slider-thumbs", {
+            loop: true,
+            spaceBetween: 0,
+            slidesPerView: 0,
+
+        });
+
+        var swiper2 = new Swiper(".bg-slider", {
+            loop: true,
+            spaceBetween: 0,
+
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+    </script>
+
+
+</body>
+
+</html>

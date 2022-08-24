@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+header{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: calc(5rem + 1rem);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+header .nav-bar{
+position: relative;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 200px;
+transition: 0.3s ease;
+}
+.nav-close-btn, .nav-menu-btn{
+    display: none;
+}
+.nav-bar .logo{
+    color: darkgoldenrod;
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: var(darkgoldenrod);
+}
+.navigation .nav-items a{
+    color: var(darkgoldenrod);
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: var(text-shadow);
+}
+/* .navigation .nav-items a i{
+    display: none;
+} */
+.navigation .nav-items a:not(:last-child){
+    margin-right: 45px;
+}
